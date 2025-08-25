@@ -1,0 +1,3 @@
+UPDATE transactions_wd
+SET usagedate = {{ Table1.updatedRow.usagedate }}
+WHERE voucher = {{ Table1.updatedRow.voucher }};

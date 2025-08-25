@@ -1,0 +1,9 @@
+SELECT 
+	user_name,
+	voucher,
+	amount,
+	inputdate,
+	usagedate
+
+FROM transactions_wd
+WHERE assign = "Cafe2"
