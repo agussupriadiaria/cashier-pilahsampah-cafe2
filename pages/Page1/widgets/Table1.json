@@ -38,11 +38,12 @@
     "amount",
     "inputdate",
     "usagedate",
+    "no",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1755391948107,
+  "columnUpdatedAt": 1756254853046,
   "columnWidthMap": {
-    "customColumn1": 60,
+    "customColumn1": 94,
     "usagedate": 148.99999999999997,
     "user_name": 352,
     "voucher": 252
@@ -100,6 +101,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.no.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -221,7 +225,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "no",
+      "alias": "num",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
@@ -242,7 +246,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "no",
+      "label": "num",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "originalId": "customColumn1",
@@ -280,6 +284,40 @@
       "notation": "standard",
       "originalId": "inputdate",
       "outputFormat": "DD/MM/YYYY",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "no": {
+      "alias": "no",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"no\"])) : no })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "no",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "no",
+      "notation": "standard",
+      "originalId": "no",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

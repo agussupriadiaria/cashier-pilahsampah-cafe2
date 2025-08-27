@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n\tuser_name,\n\tvoucher,\n\tamount,\n\tinputdate,\n\tusagedate\n\nFROM transactions_wd\nWHERE assign = \"Cafe2\"",
+      "body": "SELECT \n    user_name,\n    voucher,\n    amount,\n    inputdate,\n    usagedate,\n    no\nFROM transactions_wd\nWHERE voucher LIKE 'cafe2%';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
