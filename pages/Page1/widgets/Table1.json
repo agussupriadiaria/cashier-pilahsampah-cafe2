@@ -41,11 +41,11 @@
     "no",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1756254853046,
+  "columnUpdatedAt": 1756255187790,
   "columnWidthMap": {
     "customColumn1": 94,
     "usagedate": 148.99999999999997,
-    "user_name": 352,
+    "user_name": 312,
     "voucher": 252
   },
   "customIsLoading": false,
@@ -185,7 +185,7 @@
       "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "saveIconAlign": "left",
-      "sticky": "right",
+      "sticky": "",
       "thousandSeparator": true,
       "validation": {},
       "width": 150
